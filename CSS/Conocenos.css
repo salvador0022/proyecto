@@ -1,0 +1,173 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    background-image: url(/RECURSOS/Atardecer.jpg);
+    background-size: 100vw 100vh;
+}
+h2
+{
+    text-align: center;
+    margin: 20px;
+}
+header
+{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+header nav
+{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0px auto;
+    background-color: #024959;
+}
+
+nav a
+{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+}
+          
+nav li
+{
+    display:inline-block;
+    width:150px;
+    height:30px;
+    padding:5px 10px;
+    background-color:#024959;
+    text-align:center;
+    color:#fff;
+    position:relative;
+}
+          
+nav li:hover
+{
+    background-color:#81daee;
+    color:#000;
+}
+          
+nav li>ul
+{
+    display:none;
+}
+
+nav li:hover>ul
+{
+    display:block;
+    position:absolute;
+    top:30px;
+    left:0px;
+}
+
+.Menu_bar
+{
+    display: none;
+    position: absolute;
+}
+main
+{
+    padding-top: 2.5rem;
+}
+hr
+{
+    width: 80%;
+    margin: auto;
+}
+@font-face 
+{
+    font-family: ES1;
+    src: url("/RECURSOS/Philosopher-Bold.ttf");
+}
+h2
+{
+    text-decoration: none;
+    font-family: ES1;
+    color: white;
+    font-weight: bolder;
+}
+section
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 600px)
+{
+    header nav
+    {
+        width: 80%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+    }
+    header nav ul li
+    {
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    nav li:hover{
+        background-color:#81daee;
+        color:#000;
+        }
+
+    nav li:hover>ul{
+        display: inline-block;
+        position: absolute;
+        left:170px;
+        top: -0.5px;
+    }
+    
+    .Menu_bar
+    {
+        display: block;
+        width: 100%;
+        background-color: #ccc;
+    }
+    .Menu_bar .Btn-menu
+    {
+        display: block;
+        padding: 20px;
+        background-color: #024959;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    .Contenedor
+    {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .cont{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    main
+    {
+        padding-top: 3rem;
+    }
+    body
+    {
+        background-size: 100vw 150vh;
+    }
+}

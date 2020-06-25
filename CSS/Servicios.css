@@ -1,0 +1,159 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header
+{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+header nav
+{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0px auto;
+    background-color: #024959;
+}
+
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+    }
+          
+nav li{
+    display:inline-block;
+    width:150px;
+    height:30px;
+    padding:5px 10px;
+    background-color:#024959;
+    text-align:center;
+    color:#fff;
+    position:relative;
+}
+          
+nav li:hover{
+    background-color:#81daee;
+    color:#000;
+    }
+          
+nav li>ul{
+    display:none;
+    }
+
+nav li:hover>ul{
+    display:block;
+    position:absolute;
+    top:30px;
+    left:0px;
+}
+
+.Menu_bar
+{
+    display: none;
+    position: absolute;
+}
+body
+{
+    background-color: rgb(212, 161, 210);
+}
+main
+{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+h2
+{
+    text-align: center;
+}
+p
+{
+    text-align: justify;
+    padding: 10px 3px;
+}
+.contenedor
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 2px;
+    row-gap: 2px;
+    padding: 0 5px;
+}
+.items
+{
+    background-color: rgb(233, 216, 232);
+    border: 1px solid black;
+    border-radius: 20px;
+}
+@media(max-width: 600px)
+{
+    header nav
+    {
+        width: 80%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+    }
+    header nav ul li
+    {
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    nav li:hover{
+        background-color:#81daee;
+        color:#000;
+        }
+
+    nav li:hover>ul{
+        display: inline-block;
+        position: absolute;
+        left:170px;
+        top: -0.5px;
+    }
+    
+    .Menu_bar
+    {
+        display: block;
+        width: 100%;
+        background-color: #ccc;
+    }
+    .Menu_bar .Btn-menu
+    {
+        display: block;
+        padding: 20px;
+        background-color: #024959;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    .contenedor
+    {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    main
+    {
+        padding-top: 4.5rem;
+        padding-bottom: 1rem;
+    }
+    .items
+    {
+        width: 100%;
+        background-color: rgb(233, 216, 232);
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+}

@@ -1,0 +1,241 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@font-face 
+{
+    font-family: ES;
+    src: url("/RECURSOS/Retrow\ Mentho.otf");
+}
+h1
+{
+    font-family: "ES";
+}
+div img
+{
+    width: 100px;
+}
+body
+{
+    background-color:#CDCDC8;
+}
+p
+{
+    line-height: 1.5;
+}
+main
+{
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+}
+footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+h2
+{
+    text-align: center;
+    margin: 20px;
+}
+header
+{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+header nav
+{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0px auto;
+    background-color: #024959;
+}
+
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+    }
+          
+nav li{
+    display:inline-block;
+    width:150px;
+    height:30px;
+    padding:5px 10px;
+    background-color:#024959;
+    text-align:center;
+    color:#fff;
+    position:relative;
+}
+          
+nav li:hover{
+    background-color:#81daee;
+    color:#000;
+    }
+          
+nav li>ul{
+    display:none;
+    }
+
+nav li:hover>ul{
+    display:block;
+    position:absolute;
+    top:30px;
+    left:0px;
+}
+
+.Menu_bar
+{
+    display: none;
+    position: absolute;
+}
+
+
+
+section
+{
+    padding: 20px;
+}
+
+.Contenedor
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+}
+.items
+{
+    padding: 20px;
+}
+.items-3
+{
+    padding-top: 65px;
+}
+.bArt
+{
+    display: block;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #024959; 
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.goArt
+{
+    display: block;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+.bArtder
+{
+    display: block;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #024959; 
+    border-radius: 10px;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+@media(max-width: 600px)
+{
+    header nav
+    {
+        width: 80%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+    }
+    header nav ul li
+    {
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    nav li:hover{
+        background-color:#81daee;
+        color:#000;
+        }
+
+    nav li:hover>ul{
+        display: inline-block;
+        position: absolute;
+        left:170px;
+        top: -0.5px;
+    }
+    
+    .Menu_bar
+    {
+        display: block;
+        width: 100%;
+        background-color: #ccc;
+    }
+    .Menu_bar .Btn-menu
+    {
+        display: block;
+        padding: 20px;
+        background-color: #024959;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    .Contenedor
+    {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    main
+    {
+        padding-top: 4rem;
+        padding-bottom: 13.9rem;
+    }
+}
+
+.Redes
+{
+    display: inline-block;
+    width: 40px;
+    height: auto;
+    margin-left: 30px;
+}
+
+hr
+{
+    width: 80%;
+    margin: auto;
+}
+h6,h5
+{
+    text-align: center;
+}
+.pie
+{
+    font-size: 14px;
+    text-align: center;
+}
